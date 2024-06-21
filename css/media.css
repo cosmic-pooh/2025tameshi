@@ -1,0 +1,32 @@
+@charset"utf-8";
+/* 画面幅800ピクセル以上になると適用される */
+@media(min-width:800px){
+.layout,.me-container{
+    display: flex;
+}
+
+.title,.openbtn1,.footer-block{
+    display: none;
+}
+
+.event-block,.map-block{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* 画面幅800ピクセル未満になると適用される */
+@media(max-width:799px){
+.pc-nav,.pc-title,.subfooter-container{
+    display: none;
+}
+.map-container{
+   text-align: center;
+}
+.mat1{
+    text-align: center;
+    border: #8B7220 2px solid;
+    margin:10px 50px;
+    border-radius: 50px;
+  }
+}
